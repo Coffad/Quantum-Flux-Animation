@@ -2,8 +2,8 @@
 
 A stunning, mind-blowing **CSS Quantum Flux Animation** that creates glowing, 3D-moving particles with **smooth transitions and a futuristic effect!** 🚀✨
 
-## 📸 Preview
-![Quantum Flux Preview]) *(Upload a screenshot and put the link here)*
+## 🎥 App Preview  
+<video src="preview.mp4" controls width="100%"></video>
 
 
 ## 🚀 Features
