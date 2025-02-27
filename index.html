@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mind-Blowing CSS Quantum Flux</title>
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000; /* Deep black void */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quantum-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.quantum-particle {
+  position: absolute;
+  width: 60px; /* Base size */
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0.8;
+  mix-blend-mode: lighter; /* Even more intense blending */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-name: quantumMotion;
+  transform-style: preserve-3d;
+}
+
+.quantum-core {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, var(--core-color-start) 0%, var(--core-color-end) 100%);
+  filter: blur(var(--core-blur));
+}
+
+.quantum-aura {
+  position: absolute;
+  width: 120%; /* Larger than core */
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, var(--aura-color-start) 0%, var(--aura-color-end) 100%);
+  filter: blur(var(--aura-blur));
+  opacity: 0.6; /* Aura opacity */
+}
+
+/* Particle Variations - Colors, Motion, and Flux */
+.quantum-particle:nth-child(1) {
+  --core-color-start: #ff00ff; /* Magenta Core */
+  --core-color-end: #ff69b4;
+  --core-blur: 20px;
+  --aura-color-start: rgba(255, 0, 255, 0.3); /* Magenta Aura */
+  --aura-color-end: rgba(255, 0, 255, 0);
+  --aura-blur: 40px;
+  animation-duration: 7s;
+  transform: translate(10vw, 20vh) rotateX(30deg); /* Initial position & 3D rotation */
+}
+
+.quantum-particle:nth-child(2) {
+  --core-color-start: #00ffff; /* Cyan Core */
+  --core-color-end: #80ffff;
+  --core-blur: 15px;
+  --aura-color-start: rgba(0, 255, 255, 0.4); /* Cyan Aura */
+  --aura-color-end: rgba(0, 255, 255, 0);
+  --aura-blur: 35px;
+  animation-duration: 9s;
+  transform: translate(70vw, 80vh) rotateY(45deg); /* Different position & 3D rotation */
+}
+
+.quantum-particle:nth-child(3) {
+  --core-color-start: #ffff00; /* Yellow Core */
+  --core-color-end: #ffee58;
+  --core-blur: 25px;
+  --aura-color-start: rgba(255, 255, 0, 0.25); /* Yellow Aura */
+  --aura-color-end: rgba(255, 255, 0, 0);
+  --aura-blur: 45px;
+  animation-duration: 6s;
+  transform: translate(40vw, 50vh) rotateZ(60deg); /* Yet another position & 3D rotation */
+}
+
+.quantum-particle:nth-child(4) {
+  --core-color-start: #00ff80; /* Green-Cyan Core */
+  --core-color-end: #80ff80;
+  --core-blur: 18px;
+  --aura-color-start: rgba(0, 255, 128, 0.35); /* Green-Cyan Aura */
+  --aura-color-end: rgba(0, 255, 128, 0);
+  --aura-blur: 40px;
+  animation-duration: 8s;
+  transform: translate(90vw, 30vh) rotateX(-30deg) rotateY(-45deg); /* Complex 3D rotation */
+}
+
+
+@keyframes quantumMotion {
+  0% {
+    transform: translate3d(var(--x-start, 0vw), var(--y-start, 0vh), var(--z-start, 0px)) rotate(0deg) scale(1);
+    opacity: 0.8; /* Start somewhat opaque */
+  }
+  25% {
+    transform: translate3d(calc(var(--x-mid-1, var(--x-start, 0vw)) + 10vw), calc(var(--y-mid-1, var(--y-start, 0vh)) - 5vh), var(--z-mid-1, 50px)) rotate(90deg) scale(1.2); /* Move, rotate, scale up */
+    opacity: 0.9; /* Slightly more opaque */
+  }
+  50% {
+    transform: translate3d(var(--x-mid-2, 50vw), var(--y-mid-2, 50vh), var(--z-mid-2, -80px)) rotate(180deg) scale(0.8); /* Different position in 3D, rotate, scale down */
+    opacity: 0.7; /* Slightly less opaque */
+  }
+  75% {
+    transform: translate3d(calc(var(--x-mid-3, var(--x-start, 0vw)) - 8vw), calc(var(--y-mid-3, var(--y-start, 0vh)) + 12vh), var(--z-mid-3, 20px)) rotate(270deg) scale(1.1); /* Another 3D position, rotate, scale up again */
+    opacity: 0.95; /* Almost fully opaque - peak intensity */
+  }
+  100% {
+    transform: translate3d(var(--x-end, var(--x-start, 0vw)), var(--y-end, var(--y-start, 0vh)), var(--z-end, 0px)) rotate(360deg) scale(1); /* Return to near original, full rotation */
+    opacity: 0.8; /* Back to original opacity */
+  }
+}
+</style>
+</head>
+<body>
+  <div class="quantum-container">
+    <div class="quantum-particle">
+      <div class="quantum-core"></div>
+      <div class="quantum-aura"></div>
+    </div>
+    <div class="quantum-particle">
+      <div class="quantum-core"></div>
+      <div class="quantum-aura"></div>
+    </div>
+    <div class="quantum-particle">
+      <div class="quantum-core"></div>
+      <div class="quantum-aura"></div>
+    </div>
+    <div class="quantum-particle">
+      <div class="quantum-core"></div>
+      <div class="quantum-aura"></div>
+    </div>
+  </div>
+</body>
+</html>
